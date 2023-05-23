@@ -45,6 +45,15 @@ header a {
     background-color: var(--second-color);
 }
 
+.home-content {
+    padding: 0 51px;
+}
+
+.home-content p {
+    display: flex;
+    margin: 2rem 0 3rem;
+}
+
 .home-img img {
     width: 35vw;
     border-radius: 10px;
@@ -64,12 +73,24 @@ header a {
     transition: .5s;
 }
 
-.home-content h2{
-    text-align: center;
+.product h2 {
+    margin-bottom: 4rem;
 }
 
-.home-content p {
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.product-container .product-box {
+    border-radius: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.404);
+    overflow: hidden;
     display: flex;
-    margin: 2rem 0 3rem;
 }
 
+.product-box img {
+    width: 200px;
+}
