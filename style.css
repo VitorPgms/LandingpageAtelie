@@ -73,24 +73,38 @@ header a {
     transition: .5s;
 }
 
+.product {
+    align-items: center;
+    justify-content: center;
+}
+
 .product h2 {
+    padding: 10px;
     margin-bottom: 4rem;
+    text-align: center;
 }
 
 .product-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
     align-items: center;
-    gap: 2.5rem;
+    gap: 10px;
 }
 
-.product-container .product-box {
-    border-radius: 2rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.404);
-    overflow: hidden;
-    display: flex;
+.product-box {
+    background: var(--home-bt);
+    border: 1px solid rgba(0, 0, 0, 0.301);
+    border-radius: 10px;
+    max-width: 220px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .product-box img {
+    height: 200px;
     width: 200px;
+    border-radius: 20px;
+    padding: 10px;
 }
